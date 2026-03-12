@@ -1,2 +1,2 @@
 # saude-em-dia
-Projeto para disciplina de Desenvolvimento Web
+Projeto do grupo 10 para disciplina de Desenvolvimento Web
