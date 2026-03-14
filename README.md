@@ -29,3 +29,37 @@ O projeto "Saúde em Dia" tem como objetivo promover o cuidado em saúde por mei
 4. Push para a branch (`git push origin feature/nome-da-feature`)
 5. Abra um Pull Request
 
+# Estrutura de arquivos recomendada
+```
+saude-em-dia/
+│
+├── index.html
+├── checklist.html
+├── lembretes.html
+├── conteudos.html
+├── painel.html
+│
+├── css/
+│   ├── style.css
+│   ├── home.css
+│   ├── checklist.css
+│   ├── lembretes.css
+│   ├── conteudos.css
+│   └── painel.css
+│
+├── js/
+│   ├── main.js
+│   ├── checklist.js
+│   ├── lembretes.js
+│   ├── conteudos.js
+│   └── painel.js
+│
+├── assets/
+│   ├── img/
+│   └── icons/
+│
+├── video/
+│   └── apresentacao.mp4
+│
+└── grupo.txt
+```
