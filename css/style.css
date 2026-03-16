@@ -4,8 +4,8 @@ body {
   font-family: Arial, sans-serif;
 }
 
-h1 {
-  color: #1F2937;
-  text-align: center;
-  margin-top: 50px;
+footer {
+  background-color: #1F2937;
+  color: #F5F7FA;
+  padding: 20px 0;
 }
