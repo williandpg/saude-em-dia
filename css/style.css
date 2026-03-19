@@ -9,3 +9,44 @@ footer {
   color: #F5F7FA;
   padding: 20px 0;
 }
+
+footer a {
+  transition: 0.3s ease;
+}
+
+footer a:hover {
+  color: #7CFC98 !important;
+}
+
+footer ul li {
+  margin-bottom: 0.4rem;
+}
+
+.navbar-brand {
+  font-size: 1.4rem;
+}
+
+.navbar .nav-link {
+  color: #333;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+.navbar .nav-link:hover {
+  color: #2E8B57;
+}
+
+.navbar .nav-link.active {
+  color: #2E8B57 !important;
+}
+
+.navbar .btn-success {
+  background-color: #2E8B57;
+  border-color: #2E8B57;
+  transition: 0.3s ease;
+}
+
+.navbar .btn-success:hover {
+  background-color: #256f46;
+  border-color: #256f46;
+}
