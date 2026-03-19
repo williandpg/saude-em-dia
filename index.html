@@ -4,9 +4,209 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
+  <script src="./js/main.js" defer></script>
   <title>Saúde em Dia</title>
 </head>
 <body>
-  <h1>🚧 Site em construção 🚧</h1>
+  <header>
+    <nav class="navbar navbar-expand-lg bg-white shadow-sm py-3">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center fw-bold" href="#" style="color: #2E8B57;">
+          <img src="./assets/saude-em-dia-logo.png" alt="Logo Saúde em Dia" width="40" height="40" class="me-2">
+          Saúde em Dia
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Alternar navegação">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+            <li class="nav-item">
+              <a class="nav-link active fw-semibold" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/checklist.html">Checklist</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/progresso.html">Progresso</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/lembretes.html">Lembretes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/conteudo.html">Conteúdo</a>
+            </li>
+            <li class="nav-item mt-3 mt-lg-0 ms-lg-3">
+              <a class="btn btn-success rounded-pill px-4" href="/checklist.html">Começar</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <section id="carouselExampleCaptions" class="carousel slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="./assets/carousel-01.png" class="d-block w-100" alt="Pessoa praticando atividade física ao ar livre">
+        <div class="carousel-caption d-none d-md-block">
+          <h2 class="fw-bold display-4">Movimente seu corpo</h2>
+          <p class="display-6">Pequenas atividades diárias ajudam a melhorar a saúde, a disposição e a qualidade de vida.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="./assets/carousel-02.png" class="d-block w-100" alt="Pessoa comendo uma refeição saudável">
+        <div class="carousel-caption d-none d-md-block">
+          <h2 class="fw-bold display-4">Alimente-se melhor</h2>
+          <p class="display-6">Uma alimentação equilibrada é essencial para manter o corpo forte e o bem-estar em dia.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="./assets/carousel-03.png" class="d-block w-100" alt="Pessoa cuidando de alguém que ama">
+        <div class="carousel-caption d-none d-md-block">
+          <h2 class="fw-bold display-4">Cuide de quem importa</h2>
+          <p class="display-6">Cuidar da saúde também é criar momentos de equilíbrio, afeto e qualidade de vida com quem você ama.</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </section>
+  <section class="container marketing mt-5">
+    <div class="row text-center g-4">
+      <div class="col-12 col-md-6 col-lg-3">
+        <div class="p-3 h-100">
+          <img src="./assets/checklist.png" alt="Checklist" class="rounded-circle mb-3" width="200" height="200">
+          <h2 class="fw-normal">Checklist</h2>
+          <p class="px-2">Organize suas tarefas de saúde com checklists personalizáveis.</p>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-3">
+        <div class="p-3 h-100">
+          <img src="./assets/progresso.png" alt="Progresso" class="rounded-circle mb-3" width="200" height="200">
+          <h2 class="fw-normal">Progresso</h2>
+          <p class="px-2">Acompanhe seu progresso e alcance suas metas de saúde.</p>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-3">
+        <div class="p-3 h-100">
+          <img src="./assets/lembretes.png" alt="Lembretes" class="rounded-circle mb-3" width="200" height="200">
+          <h2 class="fw-normal">Lembretes</h2>
+          <p class="px-2">Configure lembretes para não esquecer de suas tarefas de saúde.</p>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-3">
+        <div class="p-3 h-100">
+          <img src="./assets/conteudo.png" alt="Conteúdo" class="rounded-circle mb-3" width="200" height="200">
+          <h2 class="fw-normal">Conteúdo</h2>
+          <p class="px-2">Acesse conteúdos sobre saúde e bem-estar de forma simples e prática.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="container my-5">
+    <hr class="featurette-divider my-5">
+    <div class="row featurette my-5 align-items-center">
+      <div class="col-md-7">
+        <h2 class="featurette-heading fw-normal lh-1">Organize sua rotina de cuidados</h2>
+        <p class="lead">Registre hábitos importantes do seu dia a dia de forma simples e prática. O checklist ajuda o usuário a visualizar tarefas de autocuidado, como hidratação, alimentação, atividade física e descanso, incentivando uma rotina mais saudável e consciente.</p>
+      </div>
+      <div class="col-md-5 text-center">
+        <img src="./assets/features-01.png" alt="Checklist de cuidados" class="img-fluid mx-auto rounded shadow" width="500" height="500">
+      </div>
+    </div>
+    <hr class="featurette-divider">
+    <div class="row featurette my-5 align-items-center">
+      <div class="col-md-7 order-md-2">
+        <h2 class="featurette-heading fw-normal lh-1">Acompanhe sua evolução com clareza</h2>
+        <p class="lead">A área de progresso transforma ações do dia em informações visuais fáceis de entender. Com ela, o usuário consegue perceber seu nível de constância e identificar se está mantendo bons hábitos ao longo do tempo, o que torna o cuidado mais motivador e objetivo.</p>
+      </div>
+      <div class="col-md-5 order-md-1 text-center">
+        <img src="./assets/features-02.png" alt="Progresso de hábitos" class="img-fluid mx-auto rounded shadow" width="500" height="500">
+      </div>
+    </div>
+    <hr class="featurette-divider">
+    <div class="row featurette my-5 align-items-center">
+      <div class="col-md-7">
+        <h2 class="featurette-heading fw-normal lh-1">Não deixe os cuidados importantes passarem</h2>
+        <p class="lead">Os lembretes auxiliam na prevenção e na continuidade do cuidado com a saúde. Consultas, medicações, hidratação e pequenas pausas podem ser programadas para ajudar o usuário a manter atenção ao que realmente importa em sua rotina.</p>
+      </div>
+      <div class="col-md-5 text-center">
+        <img src="./assets/features-03.png" alt="Lembretes de saúde" class="img-fluid mx-auto rounded shadow" width="500" height="500">
+      </div>
+    </div>
+    <hr class="featurette-divider">
+    <div class="row featurette my-5 align-items-center">
+      <div class="col-md-7 order-md-2">
+        <h2 class="featurette-heading fw-normal lh-1">Informação acessível para escolhas melhores</h2>
+        <p class="lead">Além de acompanhar a rotina, o sistema oferece conteúdos que orientam o usuário com dicas de bem-estar, prevenção e qualidade de vida. Dessa forma, a plataforma não apenas organiza tarefas, mas também contribui para o conhecimento e a autonomia no cuidado em saúde.</p>
+      </div>
+      <div class="col-md-5 order-md-1 text-center">
+        <img src="./assets/features-04.png" alt="Conteúdo sobre saúde" class="img-fluid mx-auto rounded shadow" width="500" height="500">
+      </div>
+    </div>
+    <hr class="featurette-divider">
+  </section>
+  <footer class="bg-dark text-white pt-5 pb-3 mt-5">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-12 col-md-6 col-lg-4">
+          <h5 class="fw-bold mb-3" style="color: #7CFC98;">Saúde em Dia</h5>
+          <p class="mb-0">
+            Uma aplicação web desenvolvida para incentivar hábitos saudáveis, organização da rotina
+            e acesso a informações de bem-estar e autocuidado.
+          </p>
+        </div>
+        <div class="col-6 col-md-3 col-lg-2">
+          <h6 class="fw-bold mb-3">Navegação</h6>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-white text-decoration-none">Home</a></li>
+            <li><a href="/checklist.html" class="text-white text-decoration-none">Checklist</a></li>
+            <li><a href="/progresso.html" class="text-white text-decoration-none">Progresso</a></li>
+            <li><a href="/lembretes.html" class="text-white text-decoration-none">Lembretes</a></li>
+            <li><a href="/conteudo.html" class="text-white text-decoration-none">Conteúdo</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md-3 col-lg-3">
+          <h6 class="fw-bold mb-3">Contato</h6>
+          <ul class="list-unstyled mb-0">
+            <li class="mb-2">Email: contato@saudeemdia.com</li>
+            <li class="mb-2">Telefone: (51) 12345-6789</li>
+            <li>Rio Grande do Sul, Brasil</li>
+          </ul>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
+          <h6 class="fw-bold mb-3">Integrantes</h6>
+          <ul class="list-unstyled mb-0">
+            <li>Eduarda Silveira Lemos</li>
+            <li>Rael Lima da Silva</li>
+            <li>Vitor Theodoro da Fonseca</li>
+            <li>Willian de Paula Gonçalves</li>
+          </ul>
+        </div>
+      </div>
+      <hr class="border-light my-4">
+      <div class="d-flex flex-column flex-md-row justify-content-between align-items-center text-center text-md-start">
+        <p class="mb-2 mb-md-0">&copy; 2026 Saúde em Dia. Todos os direitos reservados.</p>
+        <p class="mb-0">Projeto acadêmico do grupo 23 da disciplina de Desenvolvimento Web.</p>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>
