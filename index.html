@@ -10,7 +10,7 @@
 </head>
 <body>
   <header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light"> <!-- Navbar com logo e links -->
       <div class="container">
         <img src="./assets/saude-em-dia-logo.png" alt="Logo Saúde em Dia" width="30" height="30" class="d-inline-block align-text-top me-2">
         <a class="navbar-brand" style="color: #2E8B57; font-weight: bold;" href="#">Saúde em Dia</a>
@@ -36,38 +36,76 @@
       </div>
     </nav>
   </header>
-  <main class="card-body text-center">
-    <img src="./assets/saude-em-dia.png" alt="Saúde em Dia" class="card-img-top">
-    <h1 class="mb-3">Bem-vindo ao Saúde em Dia!</h1>
-    <p class="lead">Sua plataforma para manter a saúde em dia com checklists, progresso, lembretes e conteúdo educativo.</p>
-    <a href="/checklist.html" class="btn btn-primary mt-3">Comece Agora</a>
-  </main>
-  <div class="container mt-4">
-    <div class="row justify-content-center">
-      <div class="card col-md-4" style="width: 18rem;">
-        <img src="./assets/checklist.png" alt="Checklist" class="card-img-top">
-        <div class="card-body">
-          <h3 class="card-text">Checklist</h3>
-          <p class="card-text">Organize suas tarefas de saúde com checklists personalizáveis.</p>
+  <div id="carouselExampleCaptions" class="carousel slide"> <!-- Carousel com imagens e legendas -->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="./assets/carousel-01.png" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Movimente seu corpo</h5>
+          <p>Pequenas atividades diárias ajudam a melhorar a saúde, a disposição e a qualidade de vida.</p>
         </div>
       </div>
-      <div class="card col-md-4" style="width: 18rem;">
-        <img src="./assets/progresso.png" alt="Progresso" class="card-img-top">
-        <div class="card-body">
-          <h3 class="card-text">Progresso</h3>
-          <p class="card-text">Acompanhe seu progresso e alcance suas metas de saúde.</p>
+      <div class="carousel-item">
+        <img src="./assets/carousel-02.png" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Cuide de quem importa</h5>
+          <p>Cuidar da saúde também é criar momentos de equilíbrio, afeto e qualidade de vida com quem você ama.</p>
         </div>
       </div>
-      <div class="card col-md-4" style="width: 18rem;">
-        <img src="./assets/lembrete.png" alt="Lembretes" class="card-img-top">
-        <div class="card-body">
-          <h3 class="card-text">Lembretes</h3>
-          <p class="card-text">Receba lembretes para manter sua rotina de saúde em dia.</p>
+      <div class="carousel-item">
+        <img src="./assets/carousel-03.png" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Terceiro slide</h5>
+          <p>Algum conteúdo de espaço reservado representativo para o terceiro slide.</p>
         </div>
       </div>
     </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
   </div>
-  <footer class="dark-light text-center py-3">
+  <div class="container marketing mt-5 text-center"> <!-- Seção de recursos com ícones e descrições -->
+    <div class="row"> 
+      <div class="col-lg-3"> 
+        <img src="./assets/checklist.png" alt="Placeholder" class="bd-placeholder-img rounded-circle" width="200" height="200">
+        <h2 class="fw-normal">Checklist</h2>
+        <p>Organize suas tarefas de saúde com checklists personalizáveis.</p>
+      </div>
+      <div class="col-lg-3"> 
+        <img src="./assets/progresso.png" alt="Placeholder" class="bd-placeholder-img rounded-circle" width="200" height="200">
+        <h2 class="fw-normal">Progresso</h2>
+        <p>Acompanhe seu progresso e alcance suas metas de saúde.</p>
+      </div>
+      <div class="col-lg-3"> 
+        <img src="./assets/lembretes.png" alt="Placeholder" class="bd-placeholder-img rounded-circle" width="200" height="200">
+        <h2 class="fw-normal">Lembretes</h2>
+        <p>Configure lembretes para não esquecer de suas tarefas de saúde.</p>
+      </div>
+      <div class="col-lg-3"> 
+        <img src="./assets/conteudo.png" alt="Placeholder" class="bd-placeholder-img rounded-circle" width="200" height="200">
+        <h2 class="fw-normal">Conteúdo</h2>
+        <p>Acesse uma variedade de conteúdos sobre saúde e bem-estar.</p>
+      </div>
+    </div>  
+  </div>
+  
+  <hr class="featurette-divider"> 
+  <div class="row featurette"> 
+    <div class="col-md-7"> 
+      <h2 class="featurette-heading fw-normal lh-1">First featurette heading. <span class="text-body-secondary">It’ll blow your mind.</span></h2> <p class="lead">Some great placeholder content for the first featurette here. Imagine some exciting prose here.</p> </div> <div class="col-md-5"> <svg aria-label="Placeholder: 500x500" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" height="500" preserveAspectRatio="xMidYMid slice" role="img" width="500" xmlns="http://www.w3.org/2000/svg"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"></rect><text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em">500x500</text></svg> </div> </div> <hr class="featurette-divider"> <div class="row featurette"> <div class="col-md-7 order-md-2"> <h2 class="featurette-heading fw-normal lh-1">Oh yeah, it’s that good. <span class="text-body-secondary">See for yourself.</span></h2> <p class="lead">Another featurette? Of course. More placeholder content here to give you an idea of how this layout would work with some actual real-world content in place.</p> </div> <div class="col-md-5 order-md-1"> <svg aria-label="Placeholder: 500x500" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" height="500" preserveAspectRatio="xMidYMid slice" role="img" width="500" xmlns="http://www.w3.org/2000/svg"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"></rect><text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em">500x500</text></svg> </div> </div> <hr class="featurette-divider"> <div class="row featurette"> <div class="col-md-7"> <h2 class="featurette-heading fw-normal lh-1">And lastly, this one. <span class="text-body-secondary">Checkmate.</span></h2> <p class="lead">And yes, this is the last block of representative placeholder content. Again, not really intended to be actually read, simply here to give you a better view of what this would look like with some actual content. Your content.</p> </div> <div class="col-md-5"> <svg aria-label="Placeholder: 500x500" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" height="500" preserveAspectRatio="xMidYMid slice" role="img" width="500" xmlns="http://www.w3.org/2000/svg"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"></rect><text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em">500x500</text></svg> </div> </div> <hr class="featurette-divider">
+  </div>
+
+  <footer class="dark-light text-center py-3"> <!-- Rodapé com informações de contato, redes sociais e links úteis -->
     <div>
       <div class="container">
         <h2>Contato</h2>
