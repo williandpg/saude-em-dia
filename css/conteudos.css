@@ -1,0 +1,79 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #6dd5fa, #2980b9);
+}
+
+header {
+    background: linear-gradient(90deg, #ff6a00, #ee0979);
+    color: white;
+    text-align: center;
+    padding: 25px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 40px;
+}
+
+.subtitulo {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.conteudos {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.conteudos h2 {
+    color: white;
+    font-size: 34px;
+    margin-bottom: 40px;
+}
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+.card {
+    width: 320px;
+    padding: 20px;
+    border-radius: 15px;
+    color: white;
+    font-size: 18px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.25);
+    transition: transform 0.3s;
+    text-align: left;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card:nth-child(1) { background-color: #ff7675; }
+.card:nth-child(2) { background-color: #74b9ff; }
+.card:nth-child(3) { background-color: #a29bfe; }
+.card:nth-child(4) { background-color: #fdcb6e; color: black; }
+.card:nth-child(5) { background-color: #55efc4; color: black; }
+.card:nth-child(6) { background-color: #e17055; }
+.card:nth-child(7) { background-color: #00cec9; }
+.card:nth-child(8) { background-color: #6c5ce7; }
+
+.card h3 {
+    margin-top: 0;
+    font-size: 24px;
+}
+
+footer {
+    background-color: #1e1e1e;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+    font-size: 14px;
+}
