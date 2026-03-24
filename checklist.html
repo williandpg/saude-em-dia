@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Saúde em Dia - Checklist de Hábitos</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/checklist.css">
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg bg-white shadow-sm py-3">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center fw-bold" href="index.html" style="color: #2E8B57;">
+        <img src="assets/saude-em-dia-logo.png" alt="Logo Saúde em Dia" width="40" height="40" class="me-2">
+        Saúde em Dia
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Alternar navegação">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active fw-semibold" href="checklist.html">Checklist</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="progresso.html">Progresso</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="lembretes.html">Lembretes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="conteudo.html">Conteúdo</a>
+          </li>
+          <li class="nav-item mt-3 mt-lg-0 ms-lg-3">
+            <a class="btn btn-success rounded-pill px-4" href="checklist.html">Começar</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <main class="container my-5">
+    <div class="row">
+      <div class="col-12">
+        <h1 class="display-5 fw-bold text-center mb-4" style="color: #2E8B57;">
+          <i class="bi bi-check2-square me-2"></i>Checklist de Hábitos Saudáveis
+        </h1>
+        <p class="text-center text-muted mb-5">
+          Marque os hábitos que você já realizou hoje e adicione novos objetivos para sua rotina.
+        </p>
+      </div>
+    </div>
+
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <div class="card shadow-sm border-0">
+          <div class="card-body p-4">
+            <div class="mb-4">
+              <label for="newHabitInput" class="form-label fw-semibold">Adicionar novo hábito</label>
+              <div class="input-group">
+                <input type="text" class="form-control" id="newHabitInput" placeholder="Ex.: Caminhar na praça">
+                <button class="btn btn-success" type="button" id="addHabitBtn">
+                  <i class="bi bi-plus-lg"></i> Adicionar
+                </button>
+              </div>
+              <div class="form-text">Adicione sua lista de hábitos.</div>
+            </div>
+            <div>
+              <h5 class="fw-semibold mb-3">Meus hábitos</h5>
+              <ul class="list-group" id="habitsList">
+                <li class="list-group-item text-muted text-center">Carregando hábitos...</li>
+              </ul>
+            </div>
+            <div class="mt-4 pt-3 border-top">
+              <div class="d-flex justify-content-between mb-2">
+                <span class="fw-semibold">Progresso de hoje</span>
+                <span id="progressPercent">0%</span>
+              </div>
+              <div class="progress" style="height: 10px;">
+                <div id="progressBar" class="progress-bar bg-success" style="width: 0%;"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="bg-dark text-white pt-5 pb-3 mt-5">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-12 col-md-6 col-lg-4">
+          <h5 class="fw-bold mb-3" style="color: #7CFC98;">Saúde em Dia</h5>
+          <p class="mb-0">
+            Uma aplicação web desenvolvida para incentivar hábitos saudáveis, organização da rotina
+            e acesso a informações de bem-estar e autocuidado.
+          </p>
+        </div>
+        <div class="col-6 col-md-3 col-lg-2">
+          <h6 class="fw-bold mb-3">Navegação</h6>
+          <ul class="list-unstyled">
+            <li><a href="index.html" class="text-white text-decoration-none">Home</a></li>
+            <li><a href="checklist.html" class="text-white text-decoration-none">Checklist</a></li>
+            <li><a href="progresso.html" class="text-white text-decoration-none">Progresso</a></li>
+            <li><a href="lembretes.html" class="text-white text-decoration-none">Lembretes</a></li>
+            <li><a href="conteudo.html" class="text-white text-decoration-none">Conteúdo</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md-3 col-lg-3">
+          <h6 class="fw-bold mb-3">Contato</h6>
+          <ul class="list-unstyled mb-0">
+            <li class="mb-2">Email: contato@saudeemdia.com</li>
+            <li class="mb-2">Telefone: (51) 12345-6789</li>
+            <li>Rio Grande do Sul, Brasil</li>
+          </ul>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
+          <h6 class="fw-bold mb-3">Integrantes</h6>
+          <ul class="list-unstyled mb-0">
+            <li>Eduarda Silveira Lemos</li>
+            <li>Rael Lima da Silva</li>
+            <li>Vitor Theodoro da Fonseca</li>
+            <li>Willian de Paula Gonçalves</li>
+          </ul>
+        </div>
+      </div>
+      <hr class="border-light my-4">
+      <div class="d-flex flex-column flex-md-row justify-content-between align-items-center text-center text-md-start">
+        <p class="mb-2 mb-md-0">&copy; 2026 Saúde em Dia. Todos os direitos reservados.</p>
+        <p class="mb-0">Projeto acadêmico do grupo 23 da disciplina de Desenvolvimento Web.</p>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/checklist.js"></script>
+</body>
+</html>
