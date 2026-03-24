@@ -1,0 +1,110 @@
+body {
+  background-color: #F5F7FA;
+  color: #1F2937;
+  font-family: Arial, sans-serif;
+}
+
+.navbar-brand {
+  font-size: 1.4rem;
+}
+
+.navbar .nav-link {
+  color: #333;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+.navbar .nav-link:hover {
+  color: #2E8B57;
+}
+
+.navbar .nav-link.active {
+  color: #2E8B57 !important;
+}
+
+.navbar .btn-success {
+  background-color: #2E8B57;
+  border-color: #2E8B57;
+  transition: 0.3s ease;
+}
+
+.navbar .btn-success:hover {
+  background-color: #256f46;
+  border-color: #256f46;
+}
+
+.hero-painel .badge {
+  background-color: rgba(46, 139, 87, 0.12);
+  color: #2E8B57;
+  font-weight: 600;
+}
+
+.dashboard-card {
+  border-radius: 1rem;
+}
+
+.dashboard-highlight {
+  background: linear-gradient(135deg, #e8f8ee 0%, #f8fffb 100%);
+}
+
+.card {
+  border-radius: 1rem;
+}
+
+.progress {
+  height: 28px;
+  border-radius: 999px;
+  background-color: #dff3e5;
+}
+
+.progress-bar {
+  background-color: #2E8B57;
+  font-weight: 600;
+}
+
+.list-group-item {
+  border: none;
+  border-bottom: 1px solid #e9f3ec;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.status-done {
+  color: #2E8B57;
+  font-weight: 600;
+}
+
+.status-pending {
+  color: #6b7280;
+}
+
+#motivationalMessage {
+  color: #2E8B57;
+  font-weight: 600;
+}
+
+.page-header {
+  background: linear-gradient(135deg, #dff3e5 0%, #f5fbf7 100%);
+}
+
+.hero-painel {
+  padding: 4rem 0;
+}
+
+footer {
+  background-color: #1F2937;
+  color: #F5F7FA;
+  padding: 20px 0;
+}
+
+footer a {
+  transition: 0.3s ease;
+}
+
+footer a:hover {
+  color: #7CFC98 !important;
+}
+
+footer ul li {
+  margin-bottom: 0.4rem;
+}
