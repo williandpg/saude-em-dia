@@ -33,6 +33,12 @@ body {
   border-color: #256f46;
 }
 
+.hero-painel .badge {
+  background-color: rgba(46, 139, 87, 0.12);
+  color: #2E8B57;
+  font-weight: 600;
+}
+
 .subtitulo {
     margin-top: 10px;
     font-size: 18px;
