@@ -1,20 +1,36 @@
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: linear-gradient(135deg, #6dd5fa, #2980b9);
+  background-color: #F5F7FA;
+  color: #1F2937;
+  font-family: Arial, sans-serif;
 }
 
-header {
-    background: linear-gradient(90deg, #ff6a00, #ee0979);
-    color: white;
-    text-align: center;
-    padding: 25px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+.navbar-brand {
+  font-size: 1.4rem;
 }
 
-header h1 {
-    margin: 0;
-    font-size: 40px;
+.navbar .nav-link {
+  color: #333;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+.navbar .nav-link:hover {
+  color: #2E8B57;
+}
+
+.navbar .nav-link.active {
+  color: #2E8B57 !important;
+}
+
+.navbar .btn-success {
+  background-color: #2E8B57;
+  border-color: #2E8B57;
+  transition: 0.3s ease;
+}
+
+.navbar .btn-success:hover {
+  background-color: #256f46;
+  border-color: #256f46;
 }
 
 .subtitulo {
@@ -70,10 +86,19 @@ header h1 {
 }
 
 footer {
-    background-color: #1e1e1e;
-    color: white;
-    text-align: center;
-    padding: 15px;
-    margin-top: 40px;
-    font-size: 14px;
+  background-color: #1F2937;
+  color: #F5F7FA;
+  padding: 20px 0;
+}
+
+footer a {
+  transition: 0.3s ease;
+}
+
+footer a:hover {
+  color: #7CFC98 !important;
+}
+
+footer ul li {
+  margin-bottom: 0.4rem;
 }
