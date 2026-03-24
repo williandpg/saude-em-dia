@@ -1,83 +1,116 @@
-#habitsList .list-group-item {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0.75rem 1rem;
-    transition: background-color 0.2s ease;
-  }
-  
-  #habitsList .list-group-item:hover {
-    background-color: #f8f9fa;
-  }
-  
-  .habit-checked {
-    text-decoration: line-through;
-    color: #6c757d;
-    opacity: 0.8;
-  }
-  
-  .habit-actions {
-    display: flex;
-    gap: 10px;
-  }
-  
-  .habit-actions button {
-    background: none;
-    border: none;
-    font-size: 1.2rem;
-    cursor: pointer;
-    transition: transform 0.1s ease;
-  }
-  
-  .habit-actions button:hover {
-    transform: scale(1.1);
-  }
-  
-  .habit-actions .check-btn {
-    color: #2E8B57;
-  }
-  
-  .habit-actions .check-btn:hover {
-    color: #1e6b42;
-  }
-  
-  .habit-actions .delete-btn {
-    color: #dc3545;
-  }
-  
-  .habit-actions .delete-btn:hover {
-    color: #b02a37;
-  }
-  
-  /* Animação ao adicionar item */
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-      transform: translateY(-10px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-
-  .toast-custom {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background: #2E8B57;
-  color: white;
-  padding: 12px 20px;
-  border-radius: 8px;
-  opacity: 0;
-  transition: 0.3s;
-  z-index: 9999;
+body {
+  background-color: #F5F7FA;
+  color: #1F2937;
+  font-family: Arial, sans-serif;
 }
 
-.toast-custom.show {
-  opacity: 1;
+.navbar-brand {
+  font-size: 1.4rem;
 }
-  
-  #habitsList .list-group-item {
-    animation: fadeIn 0.3s ease;
+
+.navbar .nav-link {
+  color: #333;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+.navbar .nav-link:hover {
+  color: #2E8B57;
+}
+
+.navbar .nav-link.active {
+  color: #2E8B57 !important;
+}
+
+.navbar .btn-success {
+  background-color: #2E8B57;
+  border-color: #2E8B57;
+  transition: 0.3s ease;
+}
+
+.navbar .btn-success:hover {
+  background-color: #256f46;
+  border-color: #256f46;
+}
+
+.hero-checklist {
+  background: linear-gradient(135deg, #e8f8ee 0%, #f8fffb 100%);
+}
+
+.hero-checklist .badge {
+  background-color: rgba(46, 139, 87, 0.12);
+  color: #2E8B57;
+  font-weight: 600;
+}
+
+.info-card,
+.habit-card,
+.tip-card,
+.progress-section {
+  border: 1px solid #e9f3ec;
+}
+
+.habit-card h3,
+.tip-card h3,
+.progress-section h3,
+.info-card h2 {
+  color: #2E8B57;
+}
+
+.form-check-input:checked {
+  background-color: #2E8B57;
+  border-color: #2E8B57;
+}
+
+.form-check-label {
+  cursor: pointer;
+}
+
+.progress {
+  height: 28px;
+  max-width: 650px;
+  border-radius: 999px;
+  background-color: #dff3e5;
+}
+
+.progress-bar {
+  background-color: #2E8B57;
+  font-weight: 600;
+}
+
+.tip-card,
+.habit-card,
+.info-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tip-card:hover,
+.habit-card:hover,
+.info-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.08) !important;
+}
+
+@media (max-width: 768px) {
+  .hero-checklist h1 {
+    font-size: 2rem;
   }
+}
+
+footer {
+  background-color: #1F2937;
+  color: #F5F7FA;
+  padding: 20px 0;
+}
+
+footer a {
+  transition: 0.3s ease;
+}
+
+footer a:hover {
+  color: #7CFC98 !important;
+}
+
+footer ul li {
+  margin-bottom: 0.4rem;
+}

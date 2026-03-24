@@ -1,97 +1,158 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Saúde em Dia - Checklist de Hábitos</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/checklist.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Checklist de Hábitos | Saúde em Dia</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/checklist.css">
 </head>
 <body>
-
-  <nav class="navbar navbar-expand-lg bg-white shadow-sm py-3">
-    <div class="container">
-      <a class="navbar-brand d-flex align-items-center fw-bold" href="index.html" style="color: #2E8B57;">
-        <img src="assets/saude-em-dia-logo.png" alt="Logo Saúde em Dia" width="40" height="40" class="me-2">
-        Saúde em Dia
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Alternar navegação">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
-          <li class="nav-item">
-            <a class="nav-link" href="index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active fw-semibold" href="checklist.html">Checklist</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="progresso.html">Progresso</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="lembretes.html">Lembretes</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="conteudo.html">Conteúdo</a>
-          </li>
-          <li class="nav-item mt-3 mt-lg-0 ms-lg-3">
-            <a class="btn btn-success rounded-pill px-4" href="checklist.html">Começar</a>
-          </li>
-        </ul>
+  <header>
+    <nav class="navbar navbar-expand-lg bg-white shadow-sm py-3">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center fw-bold" href="#" style="color: #2E8B57;">
+          <img src="./assets/saude-em-dia-logo.png" alt="Logo Saúde em Dia" width="40" height="40" class="me-2">
+          Saúde em Dia
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Alternar navegação">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+            <li class="nav-item">
+              <a class="nav-link active fw-semibold" href="./index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./checklist.html">Checklist</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./progresso.html">Progresso</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./lembretes.html">Lembretes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./conteudos.html">Conteúdo</a>
+            </li>
+            <li class="nav-item mt-3 mt-lg-0 ms-lg-3">
+              <a class="btn btn-success rounded-pill px-4" href="./checklist.html">Começar</a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
-  </nav>
-  <main class="container my-5">
-    <div class="row">
-      <div class="col-12">
-        <h1 class="display-5 fw-bold text-center mb-4" style="color: #2E8B57;">
-          <i class="bi bi-check2-square me-2"></i>Checklist de Hábitos Saudáveis
-        </h1>
-        <p class="text-center text-muted mb-5">
-          Marque os hábitos que você já realizou hoje e adicione novos objetivos para sua rotina.
-        </p>
-      </div>
-    </div>
-
-    <div class="row justify-content-center">
-      <div class="col-lg-8">
-        <div class="card shadow-sm border-0">
-          <div class="card-body p-4">
-            <div class="mb-4">
-              <label for="newHabitInput" class="form-label fw-semibold">Adicionar novo hábito</label>
-              <div class="input-group">
-                <input type="text" class="form-control" id="newHabitInput" placeholder="Ex.: Caminhar na praça">
-                <button class="btn btn-success" type="button" id="addHabitBtn">
-                  <i class="bi bi-plus-lg"></i> Adicionar
-                </button>
-              </div>
-              <div class="form-text">Adicione sua lista de hábitos.</div>
+    </nav>
+  </header>
+  <main>
+    <section class="hero-checklist py-5">
+      <div class="container">
+        <div class="row align-items-center g-4">
+          <div class="col-lg-7">
+            <span class="badge rounded-pill px-3 py-2 mb-3">Rotina saudável</span>
+            <h1 class="display-5 fw-bold mb-3">Checklist de hábitos para cuidar da sua saúde todos os dias</h1>
+            <p class="lead text-secondary mb-4">
+              Organize sua rotina, acompanhe suas metas diárias e mantenha o foco em pequenas atitudes
+              que fazem diferença no seu bem-estar físico e mental.
+            </p>
+            <div class="d-flex flex-wrap gap-3">
+              <a href="./progresso.html" class="btn btn-success btn-lg rounded-pill px-4">Ver progresso</a>
+              <a href="./conteudos.html" class="btn btn-outline-success btn-lg rounded-pill px-4">Ler dicas</a>
             </div>
-            <div>
-              <h5 class="fw-semibold mb-3">Meus hábitos</h5>
-              <ul class="list-group" id="habitsList">
-                <li class="list-group-item text-muted text-center">Carregando hábitos...</li>
+          </div>
+          <div class="col-lg-5">
+            <div class="info-card shadow-sm p-4 rounded-4 bg-white">
+              <h2 class="h4 fw-bold mb-3">Como funciona?</h2>
+              <ul class="list-unstyled mb-0">
+                <li class="mb-3"> Marque os hábitos concluídos ao longo do dia.</li>
+                <li class="mb-3"> Visualize sua constância e evolução pessoal.</li>
+                <li class="mb-3"> Inclua cuidados físicos, mentais e preventivos.</li>
+                <li> Desenvolva uma rotina mais equilibrada e saudável.</li>
               </ul>
             </div>
-            <div class="mt-4 pt-3 border-top">
-              <div class="d-flex justify-content-between mb-2">
-                <span class="fw-semibold">Progresso de hoje</span>
-                <span id="progressPercent">0%</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="habitos" class="py-5">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="fw-bold">Seu checklist diário</h2>
+          <p class="text-secondary mb-0">Marque os hábitos que você conseguiu cumprir hoje.</p>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4">
+            <div class="habit-card h-100 p-4 rounded-4 shadow-sm bg-white">
+              <h3 class="h5 fw-bold mb-3">Cuidados com o corpo</h3>
+              <div class="form-check mb-3">
+                <input class="form-check-input habit-checkbox" type="checkbox" id="agua">
+                <label class="form-check-label" for="agua">Bebi pelo menos 2 litros de água</label>
               </div>
-              <div class="progress" style="height: 10px;">
-                <div id="progressBar" class="progress-bar bg-success" style="width: 0%;"></div>
+              <div class="form-check mb-3">
+                <input class="form-check-input habit-checkbox" type="checkbox" id="alimentacao">
+                <label class="form-check-label" for="alimentacao">Mantive uma alimentação equilibrada</label>
+              </div>
+              <div class="form-check mb-3">
+                <input class="form-check-input habit-checkbox" type="checkbox" id="sono">
+                <label class="form-check-label" for="sono">Tive uma boa noite de sono</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input habit-checkbox" type="checkbox" id="atividade-fisica">
+                <label class="form-check-label" for="atividade-fisica">Pratiquei atividade física</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="habit-card h-100 p-4 rounded-4 shadow-sm bg-white">
+              <h3 class="h5 fw-bold mb-3">Saúde mental</h3>
+              <div class="form-check mb-3">
+                <input class="form-check-input habit-checkbox" type="checkbox" id="pausa">
+                <label class="form-check-label" for="pausa">Fiz uma pausa para relaxar</label>
+              </div>
+              <div class="form-check mb-3">
+                <input class="form-check-input habit-checkbox" type="checkbox" id="estresse">
+                <label class="form-check-label" for="estresse">Controlei meu nível de estresse</label>
+              </div>
+              <div class="form-check mb-3">
+                <input class="form-check-input habit-checkbox" type="checkbox" id="gratidao">
+                <label class="form-check-label" for="gratidao">Pratiquei gratidão ou pensamento positivo</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input habit-checkbox" type="checkbox" id="tempo-tela">
+                <label class="form-check-label" for="tempo-tela">Reduzi o excesso de tempo em telas</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 mx-md-auto">
+            <div class="habit-card h-100 p-4 rounded-4 shadow-sm bg-white">
+              <h3 class="h5 fw-bold mb-3">Prevenção e autocuidado</h3>
+              <div class="form-check mb-3">
+                <input class="form-check-input habit-checkbox" type="checkbox" id="medicacao">
+                <label class="form-check-label" for="medicacao">Tomei minhas medicações corretamente</label>
+              </div>
+              <div class="form-check mb-3">
+                <input class="form-check-input habit-checkbox" type="checkbox" id="higiene">
+                <label class="form-check-label" for="higiene">Mantive meus cuidados de higiene pessoal</label>
+              </div>
+              <div class="form-check mb-3">
+                <input class="form-check-input habit-checkbox" type="checkbox" id="consulta">
+                <label class="form-check-label" for="consulta">Organizei consultas ou exames pendentes</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input habit-checkbox" type="checkbox" id="tempo-pessoal">
+                <label class="form-check-label" for="tempo-pessoal">Separei um tempo para mim</label>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
   </main>
-
   <footer class="bg-dark text-white pt-5 pb-3 mt-5">
     <div class="container">
       <div class="row g-4">
@@ -105,11 +166,11 @@
         <div class="col-6 col-md-3 col-lg-2">
           <h6 class="fw-bold mb-3">Navegação</h6>
           <ul class="list-unstyled">
-            <li><a href="index.html" class="text-white text-decoration-none">Home</a></li>
-            <li><a href="checklist.html" class="text-white text-decoration-none">Checklist</a></li>
-            <li><a href="progresso.html" class="text-white text-decoration-none">Progresso</a></li>
-            <li><a href="lembretes.html" class="text-white text-decoration-none">Lembretes</a></li>
-            <li><a href="conteudo.html" class="text-white text-decoration-none">Conteúdo</a></li>
+            <li><a href="./index.html" class="text-white text-decoration-none">Home</a></li>
+            <li><a href="./checklist.html" class="text-white text-decoration-none">Checklist</a></li>
+            <li><a href="./progresso.html" class="text-white text-decoration-none">Progresso</a></li>
+            <li><a href="./lembretes.html" class="text-white text-decoration-none">Lembretes</a></li>
+            <li><a href="./conteudos.html" class="text-white text-decoration-none">Conteúdo</a></li>
           </ul>
         </div>
         <div class="col-6 col-md-3 col-lg-3">
@@ -137,7 +198,5 @@
       </div>
     </div>
   </footer>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="js/checklist.js"></script>
 </body>
 </html>
