@@ -1,203 +1,273 @@
-# saude-em-dia
-Projeto do grupo 23 para disciplina de Desenvolvimento Web
+<h1><strong>Saúde em Dia</strong></h1>
 
-# Descrição do tema proposto
-## Cuidado em Saúde
-O cuidado em saúde é uma ação integral fruto do 'entre-relações' de pessoas, ou seja, ação integral como efeitos e repercussões de interações positivas entre usuários, profissionais e instituições, que são traduzidas em atitudes, tais como: tratamento digno e respeitoso, com qualidade, acolhimento e vínculo.
-Fonte: FioCruz
+<h2><strong>Descrição</strong></h2>
+<p align="justify">
+  O <strong>Saúde em Dia</strong> é um projeto com o objetivo de promover o cuidado em saúde por meio de uma plataforma digital prática, acessível e intuitiva. A proposta do sistema é incentivar hábitos saudáveis e facilitar o acompanhamento da rotina de bem-estar, oferecendo recursos como checklist de hábitos, painel de progresso, agendamentos de saúde e conteúdos informativos.
+</p>
+<p align="justify">
+  O projeto foi pensado para apoiar usuários na organização de sua rotina de autocuidado, reunindo ferramentas que contribuem para a melhoria da qualidade de vida e para o acesso mais simples a informações relacionadas à saúde e ao bem-estar.
+</p>
 
-## Projeto proposto
-O projeto "Saúde em Dia" tem como objetivo promover o cuidado em saúde por meio de uma plataforma digital que oferece recursos e ferramentas para auxiliar os usuários a manterem hábitos saudáveis e acompanharem sua saúde de forma prática e acessível. A plataforma contará com funcionalidades como checklist de hábitos, painel de acompanhamento, agendamentos de saúde e conteúdos informativos sobre saúde e bem-estar. O foco do projeto é incentivar a adoção de hábitos saudáveis e facilitar o acesso a informações e serviços relacionados à saúde, contribuindo para a melhoria da qualidade de vida dos usuários.
+<h2><strong>Funcionalidades</strong></h2>
+<ul>
+  <li align="justify"><strong>Checklist de Hábitos</strong>, para acompanhamento de práticas saudáveis no dia a dia.</li>
+  <li align="justify"><strong>Painel de Progresso</strong>, permitindo visualizar a evolução dos hábitos e do cuidado pessoal.</li>
+  <li align="justify"><strong>Agendamentos de Saúde</strong>, organizando compromissos e lembretes importantes.</li>
+  <li align="justify"><strong>Conteúdos Informativos</strong>, com materiais sobre saúde, bem-estar e autocuidado.</li>
+  <li align="justify"><strong>Interface Responsiva</strong>, adaptada para diferentes tamanhos de tela.</li>
+</ul>
 
-# Telas do projeto
-- Home
-- Checklist de habitos
-- Painel de acompanhamento
-- Agendamentos de saúde
-- Conteudos sobre os habitos e saude
+<h2><strong>Demonstração do Projeto</strong></h2>
+<p align="center">
+  <img src="./assets/preview-01.png" alt="Prévia da home Saúde em Dia" width="40%"/>
+  <img src="./assets/preview-2.png" alt="Prévia do checklist Saúde em Dia" width="40%"/>
+  <br />
+  <a href="https://saude-em-dia-chi.vercel.app/" target="_blank"><strong>Acesse a demonstração</strong></a>
+</p>
 
-# Tecnologias utilizadas
-- HTML
-- CSS
-- JavaScript
-- Bootstrap
+<h2><strong>Tecnologias Utilizadas</strong></h2>
+<ul>
+  <li align="justify"><a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML" target="_blank"><strong>HTML</strong></a>: utilizado para estruturar semanticamente as páginas da aplicação.</li>
+  <li align="justify"><a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS" target="_blank"><strong>CSS</strong></a>: responsável pela estilização visual, organização do layout e responsividade.</li>
+  <li align="justify"><a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript" target="_blank"><strong>JavaScript</strong></a>: usado para adicionar interatividade e dinamismo às funcionalidades da plataforma.</li>
+  <li align="justify"><a href="https://getbootstrap.com/" target="_blank"><strong>Bootstrap</strong></a>: framework CSS utilizado para acelerar a construção da interface e melhorar a responsividade.</li>
+  <li align="justify"><a href="https://vercel.com/" target="_blank"><strong>Vercel</strong></a>: plataforma de implantação utilizada para hospedar a aplicação.</li>
+</ul>
 
-# Como contribuir
-1. Clone este repositório
-2. Crie uma branch para sua feature (`git checkout -b feature/nome-da-feature`)
-3. Faça commit das suas alterações (`git commit -m 'Adiciona nova feature')
-4. Push para a branch (`git push origin feature/nome-da-feature`)
-5. Abra um Pull Request
-
-# Estrutura de arquivos recomendada
-```
+<h2><strong>Estrutura do Projeto</strong></h2>
+<p align="justify">A estrutura do projeto está organizada da seguinte forma:</p>
+<pre><code>
 saude-em-dia/
-│
-├── index.html
-├── checklist.html
-├── lembretes.html
-├── conteudos.html
-├── painel.html
-│
-├── css/
-│   ├── style.css
-│   ├── home.css
-│   ├── checklist.css
-│   ├── lembretes.css
-│   ├── conteudos.css
-│   └── painel.css
+├── assets/    # Imagens, ícones e outros recursos visuais
 │
 ├── js/
 │   ├── main.js
 │   ├── checklist.js
 │   ├── lembretes.js
 │   ├── conteudos.js
-│   └── painel.js
+│   └── progresso.js
 │
-├── assets/
-│   ├── img/
-│   └── icons/
+├── css/
+│   ├── style.css
+│   ├── checklist.css
+│   ├── lembretes.css
+│   ├── conteudos.css
+│   └── progresso.css
 │
 ├── video/
 │   └── apresentacao.mp4
 │
+├── index.html
+├── checklist.html
+├── lembretes.html
+├── conteudos.html
+├── painel.html
+├── README.md
 └── grupo.txt
-```
+</code></pre>
 
-Navbar para todas as páginas:
-```html
-<nav class="navbar navbar-expand-lg bg-white shadow-sm py-3">
-  <div class="container">
-    <a class="navbar-brand d-flex align-items-center fw-bold" href="#" style="color: #2E8B57;">
-      <img src="./assets/saude-em-dia-logo.png" alt="Logo Saúde em Dia" width="40" height="40" class="me-2">
-      Saúde em Dia
-    </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-      aria-controls="navbarNav" aria-expanded="false" aria-label="Alternar navegação">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
-        <li class="nav-item">
-          <a class="nav-link active fw-semibold" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/checklist.html">Checklist</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/progresso.html">Progresso</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/lembretes.html">Lembretes</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/conteudo.html">Conteúdo</a>
-        </li>
-        <li class="nav-item mt-3 mt-lg-0 ms-lg-3">
-          <a class="btn btn-success rounded-pill px-4" href="/checklist.html">Começar</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
-```
+<h2><strong>Instalação e Uso</strong></h2>
+<ol>
+  <li align="justify">Clone o repositório:
+    <br>
+    <code>git clone https://github.com/williandpg/saude-em-dia.git</code>
+  </li>
+  <li align="justify">Acesse a pasta do projeto:
+    <br>
+    <code>cd saude-em-dia</code>
+  </li>
+  <li align="justify">Abra o arquivo <code>index.html</code> diretamente no navegador ou utilize uma extensão como <strong>Live Server</strong> no VS Code.</li>
+  <li align="justify">Navegue pelas páginas para explorar os recursos disponíveis na plataforma.</li>
+</ol>
 
-Footer para todas as páginas:
-```html
-<footer class="bg-dark text-white pt-5 pb-3 mt-5">
-  <div class="container">
-    <div class="row g-4">
-      <div class="col-12 col-md-6 col-lg-4">
-        <h5 class="fw-bold mb-3" style="color: #7CFC98;">Saúde em Dia</h5>
-        <p class="mb-0">
-          Uma aplicação web desenvolvida para incentivar hábitos saudáveis, organização da rotina
-          e acesso a informações de bem-estar e autocuidado.
-        </p>
-      </div>
-      <div class="col-6 col-md-3 col-lg-2">
-        <h6 class="fw-bold mb-3">Navegação</h6>
-        <ul class="list-unstyled">
-          <li><a href="#" class="text-white text-decoration-none">Home</a></li>
-          <li><a href="/checklist.html" class="text-white text-decoration-none">Checklist</a></li>
-          <li><a href="/progresso.html" class="text-white text-decoration-none">Progresso</a></li>
-          <li><a href="/lembretes.html" class="text-white text-decoration-none">Lembretes</a></li>
-          <li><a href="/conteudo.html" class="text-white text-decoration-none">Conteúdo</a></li>
-        </ul>
-      </div>
-      <div class="col-6 col-md-3 col-lg-3">
-        <h6 class="fw-bold mb-3">Contato</h6>
-        <ul class="list-unstyled mb-0">
-          <li class="mb-2">Email: contato@saudeemdia.com</li>
-          <li class="mb-2">Telefone: (51) 12345-6789</li>
-          <li>Rio Grande do Sul, Brasil</li>
-        </ul>
-      </div>
-      <div class="col-12 col-md-6 col-lg-3">
-        <h6 class="fw-bold mb-3">Integrantes</h6>
-        <ul class="list-unstyled mb-0">
-          <li>Eduarda Silveira Lemos</li>
-          <li>Rael Lima da Silva</li>
-          <li>Vitor Theodoro da Fonseca</li>
-          <li>Willian de Paula Gonçalves</li>
-        </ul>
-      </div>
-    </div>
-    <hr class="border-light my-4">
-    <div class="d-flex flex-column flex-md-row justify-content-between align-items-center text-center text-md-start">
-      <p class="mb-2 mb-md-0">&copy; 2026 Saúde em Dia. Todos os direitos reservados.</p>
-      <p class="mb-0">Projeto acadêmico do grupo 23 da disciplina de Desenvolvimento Web.</p>
-    </div>
-  </div>
-</footer>
-```
+<h2><strong>Contribuição</strong></h2>
+<ol>
+  <li align="justify">Faça um fork do projeto.</li>
+  <li align="justify">Crie uma branch para sua feature:
+    <br>
+    <code>git checkout -b feature/minha-feature</code>
+  </li>
+  <li align="justify">Faça commit das alterações:
+    <br>
+    <code>git commit -m "feat: adiciona nova funcionalidade"</code>
+  </li>
+  <li align="justify">Envie para o seu repositório remoto:
+    <br>
+    <code>git push origin feature/minha-feature</code>
+  </li>
+  <li align="justify">Abra um Pull Request descrevendo as mudanças realizadas.</li>
+</ol>
 
-CSS para navbar e footer (adicionar ao style.css):
-```css
-.navbar-brand {
-  font-size: 1.4rem;
-}
+<h2><strong>Contato</strong></h2>
+<p>
+  <strong>Eduarda Silveira Lemos</strong> |
+  <a href="" target="_blank"><strong>LinkedIn</strong></a> |
+  <a href="https://github.com/EduardaSilveira04" target="_blank"><strong>GitHub</strong></a> |
+  <a href="https://EduardaSilveira04.github.io/" target="_blank"><strong>Portfólio</strong></a> |
+  <a href="mailto:" target="_blank"><strong>Email</strong></a>
+</p>
+<p>
+  <strong>Rael Lima da Silva</strong> |
+  <a href="" target="_blank"><strong>LinkedIn</strong></a> |
+  <a href="https://github.com/Raellima7" target="_blank"><strong>GitHub</strong></a> |
+  <a href="https://Raellima7.github.io/" target="_blank"><strong>Portfólio</strong></a> |
+  <a href="mailto:" target="_blank"><strong>Email</strong></a>
+</p>
+<p>
+  <strong>Vitor Theodoro da Fonseca</strong> |
+  <a href="" target="_blank"><strong>LinkedIn</strong></a> |
+  <a href="https://github.com/vtzada" target="_blank"><strong>GitHub</strong></a> |
+  <a href="https://vtzada.github.io/" target="_blank"><strong>Portfólio</strong></a> |
+  <a href="mailto:" target="_blank"><strong>Email</strong></a>
+</p>
+<p>
+  <strong>Willian Gonçalves</strong> |
+  <a href="https://www.linkedin.com/in/williandpg/" target="_blank"><strong>LinkedIn</strong></a> |
+  <a href="https://github.com/williandpg" target="_blank"><strong>GitHub</strong></a> |
+  <a href="https://williandpg.github.io/" target="_blank"><strong>Portfólio</strong></a> |
+  <a href="mailto:goncalves.wdp@outlook.com" target="_blank"><strong>Email</strong></a>
+</p>
 
-.navbar .nav-link {
-  color: #333;
-  font-weight: 500;
-  transition: 0.3s ease;
-}
+<h2><strong>Créditos</strong></h2>
+<p align="justify">
+  Este projeto foi desenvolvido como parte da disciplina de <strong>Desenvolvimento Web</strong> ministrada pela Unisinos, com foco na criação de uma solução digital voltada à promoção do cuidado em saúde, bem-estar e hábitos saudáveis.
+</p>
 
-.navbar .nav-link:hover {
-  color: #2E8B57;
-}
+<details>
+  <summary><strong>English Version</strong></summary>
 
-.navbar .nav-link.active {
-  color: #2E8B57 !important;
-}
+  <h1><strong>Saúde em Dia</strong></h1>
 
-.navbar .btn-success {
-  background-color: #2E8B57;
-  border-color: #2E8B57;
-  transition: 0.3s ease;
-}
+  <h2><strong>Description</strong></h2>
+  <p align="justify">
+    <strong>Saúde em Dia</strong> is a project with the goal of promoting health care through a practical, accessible and intuitive digital platform. The system was designed to encourage healthy habits and make wellness tracking easier by offering features such as habit checklists, progress dashboards, health scheduling and informative health-related content.
+  </p>
+  <p align="justify">
+    The project aims to support users in organizing their self-care routine, bringing together tools that contribute to a better quality of life and simpler access to health and wellness information.
+  </p>
 
-.navbar .btn-success:hover {
-  background-color: #256f46;
-  border-color: #256f46;
-}
+  <h2><strong>Features</strong></h2>
+  <ul>
+    <li align="justify"><strong>Habit Checklist</strong> to track healthy daily practices.</li>
+    <li align="justify"><strong>Progress Dashboard</strong> to visualize personal health and habit evolution.</li>
+    <li align="justify"><strong>Health Scheduling</strong> to organize important appointments and reminders.</li>
+    <li align="justify"><strong>Informative Content</strong> focused on health, wellness and self-care.</li>
+    <li align="justify"><strong>Responsive Interface</strong> adapted to different screen sizes.</li>
+  </ul>
 
-footer {
-  background-color: #1F2937;
-  color: #F5F7FA;
-  padding: 20px 0;
-}
+  <h2><strong>Project Demonstration</strong></h2>
+  <p align="center">
+    <img src="./assets/preview-01.png" alt="Preview of Saúde em Dia home page" width="40%"/>
+    <img src="./assets/preview-2.png" alt="Preview of Saúde em Dia checklist page" width="40%"/>
+    <br />
+    <a href="https://saude-em-dia-chi.vercel.app/" target="_blank"><strong>Access the live demo</strong></a>
+  </p>
 
-footer a {
-  transition: 0.3s ease;
-}
+  <h2><strong>Technologies Used</strong></h2>
+  <ul>
+    <li align="justify"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank"><strong>HTML</strong></a>: used to create the semantic structure of the pages.</li>
+    <li align="justify"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank"><strong>CSS</strong></a>: responsible for styling, layout organization and responsiveness.</li>
+    <li align="justify"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"><strong>JavaScript</strong></a>: used to add interactivity and dynamic behavior to the platform.</li>
+    <li align="justify"><a href="https://getbootstrap.com/" target="_blank"><strong>Bootstrap</strong></a>: CSS framework used to speed up interface development and improve responsiveness.</li>
+    <li align="justify"><a href="https://vercel.com/" target="_blank"><strong>Vercel</strong></a>: deployment platform used to host the application.</li>
+  </ul>
 
-footer a:hover {
-  color: #7CFC98 !important;
-}
+  <h2><strong>Project Structure</strong></h2>
+  <p align="justify">The project structure is organized as follows:</p>
+  <pre><code>
+  saude-em-dia/
+  ├── assets/    # Images, icons and other visual resources
+  │
+  ├── js/
+  │   ├── main.js
+  │   ├── checklist.js
+  │   ├── lembretes.js
+  │   ├── conteudos.js
+  │   └── progresso.js
+  │
+  ├── css/
+  │   ├── style.css
+  │   ├── checklist.css
+  │   ├── lembretes.css
+  │   ├── conteudos.css
+  │   └── progresso.css
+  │
+  ├── video/
+  │   └── apresentacao.mp4
+  │
+  ├── index.html
+  ├── checklist.html
+  ├── lembretes.html
+  ├── conteudos.html
+  ├── painel.html
+  ├── README.md
+  └── grupo.txt
+  </code></pre>
 
-footer ul li {
-  margin-bottom: 0.4rem;
-}
-```
+  <h2><strong>Installation and Usage</strong></h2>
+  <ol>
+    <li align="justify">Clone the repository:
+      <br>
+      <code>git clone https://github.com/williandpg/saude-em-dia.git</code>
+    </li>
+    <li align="justify">Open the project folder:
+      <br>
+      <code>cd saude-em-dia</code>
+    </li>
+    <li align="justify">Open the <code>index.html</code> file directly in your browser or use an extension such as <strong>Live Server</strong> in VS Code.</li>
+    <li align="justify">Navigate through the pages to explore the platform features.</li>
+  </ol>
 
+  <h2><strong>Contribution</strong></h2>
+  <ol>
+    <li align="justify">Fork the project.</li>
+    <li align="justify">Create a feature branch:
+      <br>
+      <code>git checkout -b feature/my-feature</code>
+    </li>
+    <li align="justify">Commit your changes:
+      <br>
+      <code>git commit -m "feat: add new feature"</code>
+    </li>
+    <li align="justify">Push the branch to your remote repository:
+      <br>
+      <code>git push origin feature/my-feature</code>
+    </li>
+    <li align="justify">Open a Pull Request describing your changes.</li>
+  </ol>
+
+  <h2><strong>Contact</strong></h2>
+  <p>
+    <strong>Eduarda Silveira Lemos</strong> |
+    <a href="" target="_blank"><strong>LinkedIn</strong></a> |
+    <a href="https://github.com/EduardaSilveira04" target="_blank"><strong>GitHub</strong></a> |
+    <a href="https://EduardaSilveira04.github.io/" target="_blank"><strong>Portfólio</strong></a> |
+    <a href="mailto:" target="_blank"><strong>Email</strong></a>
+  </p>
+  <p>
+    <strong>Rael Lima da Silva</strong> |
+    <a href="" target="_blank"><strong>LinkedIn</strong></a> |
+    <a href="https://github.com/Raellima7" target="_blank"><strong>GitHub</strong></a> |
+    <a href="https://Raellima7.github.io/" target="_blank"><strong>Portfólio</strong></a> |
+    <a href="mailto:" target="_blank"><strong>Email</strong></a>
+  </p>
+  <p>
+    <strong>Vitor Theodoro da Fonseca</strong> |
+    <a href="" target="_blank"><strong>LinkedIn</strong></a> |
+    <a href="https://github.com/vtzada" target="_blank"><strong>GitHub</strong></a> |
+    <a href="https://vtzada.github.io/" target="_blank"><strong>Portfólio</strong></a> |
+    <a href="mailto:" target="_blank"><strong>Email</strong></a>
+  </p>
+  <p>
+    <strong>Willian Gonçalves</strong> |
+    <a href="https://www.linkedin.com/in/williandpg/" target="_blank"><strong>LinkedIn</strong></a> |
+    <a href="https://github.com/williandpg" target="_blank"><strong>GitHub</strong></a> |
+    <a href="https://williandpg.github.io/" target="_blank"><strong>Portfólio</strong></a> |
+    <a href="mailto:goncalves.wdp@outlook.com" target="_blank"><strong>Email</strong></a>
+  </p>
+
+  <h2><strong>Credits</strong></h2>
+  <p align="justify">
+    This project was developed as part of the <strong>Web Development</strong> course ministrated by Unisinos, focusing on the creation of a digital solution aimed at health care, wellness and healthy habits.
+  </p>
+</details>
