@@ -37,14 +37,19 @@ body {
   background: linear-gradient(135deg, #dff3e5 0%, #f5fbf7 100%);
 }
 
-.hero-conteudo {
-  padding: 4rem 0;
+.hero-lembretes {
+  background: linear-gradient(135deg, #e8f8ee 0%, #f8fffb 100%);
 }
-
-.hero-conteudo .badge {
-  background-color: rgba(46, 139, 87, 0.12);
+  
+.hero-lembretes .badge {
+  background-color: #d4edda;
   color: #2E8B57;
+  font-size: 0.85rem;
   font-weight: 600;
+}
+  
+.hero-lembretes .info-card li {
+  font-size: 0.95rem;
 }
 
 .subtitulo {

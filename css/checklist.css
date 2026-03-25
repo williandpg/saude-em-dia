@@ -50,13 +50,6 @@ body {
   border: 1px solid #e9f3ec;
 }
 
-.habit-card h3,
-.tip-card h3,
-.progress-section h3,
-.info-card h2 {
-  color: #2E8B57;
-}
-
 .form-check-input:checked {
   background-color: #2E8B57;
   border-color: #2E8B57;

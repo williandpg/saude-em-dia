@@ -28,7 +28,7 @@
   }
 
   .hero-lembretes {
-    background: linear-gradient(135deg, #f0faf4 0%, #e6f7ed 100%);
+    background: linear-gradient(135deg, #e8f8ee 0%, #f8fffb 100%);
   }
   
   .hero-lembretes .badge {
@@ -36,10 +36,6 @@
     color: #2E8B57;
     font-size: 0.85rem;
     font-weight: 600;
-  }
-  
-  .hero-lembretes .info-card {
-    border-left: 4px solid #2E8B57;
   }
   
   .hero-lembretes .info-card li {
