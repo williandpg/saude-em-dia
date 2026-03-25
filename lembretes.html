@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/lembretes.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+  <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
+  <script src="./js/lembretes.js" defer></script>
+  <title>Saúde em Dia</title>
+</head>
+
+<body>
+
+  <header>
+    <nav class="navbar navbar-expand-lg bg-white shadow-sm py-3">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center fw-bold" href="./index.html" style="color: #2E8B57;">
+          <img src="./assets/saude-em-dia-logo.png" alt="Logo Saúde em Dia" width="40" height="40" class="me-2">
+          Saúde em Dia
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Alternar navegação">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+            <li class="nav-item">
+              <a class="nav-link" href="./index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./checklist.html">Checklist</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./progresso.html">Progresso</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active fw-semibold" href="./lembretes.html">Lembretes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./conteudos.html">Conteúdo</a>
+            </li>
+            <li class="nav-item mt-3 mt-lg-0 ms-lg-3">
+              <a class="btn btn-success rounded-pill px-4" href="./checklist.html">Começar</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- Hero Section -->
+    <section class="hero-lembretes py-5">
+      <div class="container">
+        <div class="row align-items-center g-4">
+          <div class="col-lg-7">
+            <span class="badge rounded-pill px-3 py-2 mb-3">Organize sua rotina</span>
+            <h1 class="display-5 fw-bold mb-3">Lembretes de saúde para não esquecer o que importa</h1>
+            <p class="lead text-secondary mb-4">
+              Configure alertas personalizados para consultas, medicações, hidratação e outros
+              cuidados essenciais. Nunca mais perca um compromisso com sua saúde.
+            </p>
+            <div class="d-flex flex-wrap gap-3">
+              <a href="#novo-lembrete" class="btn btn-success btn-lg rounded-pill px-4">Criar lembrete</a>
+              <a href="./checklist.html" class="btn btn-outline-success btn-lg rounded-pill px-4">Ver checklist</a>
+            </div>
+          </div>
+          <div class="col-lg-5">
+            <div class="info-card shadow-sm p-4 rounded-4 bg-white">
+              <h2 class="h4 fw-bold mb-3">Como funciona?</h2>
+              <ul class="list-unstyled mb-0">
+                <li class="mb-3">
+                  <i class="bi bi-check-circle-fill text-success me-2"></i>
+                  Adicione lembretes com título, categoria e horário.
+                </li>
+                <li class="mb-3">
+                  <i class="bi bi-eye-fill text-primary me-2"></i>
+                  Visualize todos os seus alertas em um só lugar.
+                </li>
+                <li class="mb-3">
+                  <i class="bi bi-check2-square text-success me-2"></i>
+                  Marque como concluído ou remova quando necessário.
+                </li>
+                <li>
+                  <i class="bi bi-heart-pulse-fill text-danger me-2"></i>
+                  Mantenha sua rotina de saúde sempre organizada.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Formulário de novo lembrete -->
+    <section id="novo-lembrete" class="py-5">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="fw-bold">Criar novo lembrete</h2>
+          <p class="text-secondary mb-0">Preencha as informações abaixo para adicionar um lembrete de saúde.</p>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="lembrete-form-card rounded-4 shadow-sm bg-white p-4 p-md-5">
+              <div class="row g-3">
+                <div class="col-12">
+                    <label for="titulo" class="form-label fw-semibold">
+                      <i class="bi bi-pencil-square me-2 text-success"></i>
+                      Título do lembrete
+                    </label>
+                  
+                    <input 
+                      type="text" 
+                      class="form-control" 
+                      id="titulo"
+                      placeholder="Ex: Tomar vitamina D, Consulta com médico..."
+                      maxlength="60"
+                      required
+                    >
+                  
+                    <small class="text-muted">Máx. 60 caracteres</small>
+                  </div>
+                <div class="col-md-6">
+                    <label for="categoria" class="form-label fw-semibold">
+                      <i class="bi bi-tags-fill me-2 text-success"></i>Categoria
+                    </label>    
+                    <select class="form-select" id="categoria">
+                      <option value="" disabled selected>Selecione uma categoria</option>
+                      <option value="medicacao">Medicação</option>
+                      <option value="consulta">Consulta médica</option>
+                      <option value="exercicio">Exercício físico</option>
+                      <option value="hidratacao">Hidratação</option>
+                      <option value="alimentacao">Alimentação</option>
+                      <option value="sono">Sono</option>
+                      <option value="outro">Outro</option>
+                    </select>
+                  </div>
+                  <div class="col-md-6">
+                    <label for="horario" class="form-label fw-semibold">
+                      <i class="bi bi-clock-fill me-2 text-success"></i>Horário
+                    </label>                 
+                    <input 
+                      type="time" 
+                      class="form-control" 
+                      id="horario"
+                      required>
+                  </div>
+                  <div class="col-12">
+                    <label for="descricao" class="form-label fw-semibold">
+                      <i class="bi bi-chat-left-text me-2 text-success"></i>
+                      Observações 
+                      <span class="text-secondary fw-normal">(opcional)</span>
+                    </label>
+                  
+                    <textarea 
+                      class="form-control" 
+                      id="descricao" 
+                      rows="2"
+                      maxlength="120"
+                      placeholder="Adicione detalhes ou instruções..."
+                    ></textarea>
+                  
+                    <small id="contador-descricao" class="text-muted">0 / 120</small>
+                  </div>
+                <div class="col-12 mt-2">
+                  <button type="button" id="btnAdicionarLembrete" class="btn btn-success rounded-pill px-5">
+                    Adicionar lembrete
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Lista de lembretes -->
+    <section class="py-5 bg-light">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="fw-bold">Seus lembretes</h2>
+          <p class="text-secondary mb-0">Acompanhe e gerencie todos os seus alertas de saúde.</p>
+        </div>
+
+        <!-- Filtros -->
+        <div class="d-flex flex-wrap gap-2 justify-content-center mb-4" id="filtros">
+            <button class="btn btn-success rounded-pill px-4 btn-filtro active" data-filtro="todos">
+              <i class="bi bi-grid-fill me-2"></i> Todos
+            </button>
+          
+            <button class="btn btn-outline-success rounded-pill px-4 btn-filtro" data-filtro="medicacao">
+              <i class="bi bi-capsule-pill me-2"></i> Medicação
+            </button>
+          
+            <button class="btn btn-outline-success rounded-pill px-4 btn-filtro" data-filtro="consulta">
+              <i class="bi bi-hospital me-2"></i> Consulta
+            </button>
+          
+            <button class="btn btn-outline-success rounded-pill px-4 btn-filtro" data-filtro="exercicio">
+              <i class="bi bi-activity me-2"></i> Exercício
+            </button>
+          
+            <button class="btn btn-outline-success rounded-pill px-4 btn-filtro" data-filtro="hidratacao">
+              <i class="bi bi-droplet-fill me-2"></i> Hidratação
+            </button>
+          
+            <button class="btn btn-outline-success rounded-pill px-4 btn-filtro" data-filtro="alimentacao">
+              <i class="bi bi-egg-fried me-2"></i> Alimentação
+            </button>
+          
+            <button class="btn btn-outline-success rounded-pill px-4 btn-filtro" data-filtro="sono">
+              <i class="bi bi-moon-stars-fill me-2"></i> Sono
+            </button>
+          </div>
+
+        <!-- Cards de lembretes -->
+        <div class="row g-4" id="lista-lembretes">
+          <!-- Lembretes serão inseridos pelo JS aqui -->
+        </div>
+
+        <!-- Estado vazio -->
+        <div id="estado-vazio" class="text-center py-5 d-none">
+            <div class="empty-icon mb-3">
+              <i class="bi bi-bell-slash-fill text-secondary" style="font-size: 3rem;"></i>
+            </div>
+          
+            <h3 class="h5 fw-bold text-secondary">Nenhum lembrete encontrado</h3>
+          
+            <p class="text-secondary mb-4">
+              Adicione seu primeiro lembrete de saúde acima.
+            </p>
+          
+            <a href="#novo-lembrete" class="btn btn-success rounded-pill px-4">
+              <i class="bi bi-plus-circle me-2"></i> Criar lembrete
+            </a>
+          </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Toast de confirmação -->
+  <div class="toast-container position-fixed bottom-0 end-0 p-3">
+    <div id="toastLembrete" class="toast align-items-center text-bg-success border-0" role="alert"
+      aria-live="assertive" aria-atomic="true">
+      <div class="d-flex">
+        <div class="toast-body" id="toastMensagem">
+          Lembrete adicionado com sucesso!
+        </div>
+        <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"
+          aria-label="Fechar"></button>
+      </div>
+    </div>
+  </div>
+
+  <footer class="bg-dark text-white pt-5 pb-3 mt-5">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-12 col-md-6 col-lg-4">
+          <h5 class="fw-bold mb-3" style="color: #7CFC98;">Saúde em Dia</h5>
+          <p class="mb-0">
+            Uma aplicação web desenvolvida para incentivar hábitos saudáveis, organização da rotina
+            e acesso a informações de bem-estar e autocuidado.
+          </p>
+        </div>
+        <div class="col-6 col-md-3 col-lg-2">
+          <h6 class="fw-bold mb-3">Navegação</h6>
+          <ul class="list-unstyled">
+            <li><a href="./index.html" class="text-white text-decoration-none">Home</a></li>
+            <li><a href="./checklist.html" class="text-white text-decoration-none">Checklist</a></li>
+            <li><a href="./progresso.html" class="text-white text-decoration-none">Progresso</a></li>
+            <li><a href="./lembretes.html" class="text-white text-decoration-none">Lembretes</a></li>
+            <li><a href="./conteudos.html" class="text-white text-decoration-none">Conteúdo</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md-3 col-lg-3">
+          <h6 class="fw-bold mb-3">Contato</h6>
+          <ul class="list-unstyled mb-0">
+            <li class="mb-2">Email: contato@saudeemdia.com</li>
+            <li class="mb-2">Telefone: (51) 12345-6789</li>
+            <li>Rio Grande do Sul, Brasil</li>
+          </ul>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
+          <h6 class="fw-bold mb-3">Integrantes</h6>
+          <ul class="list-unstyled mb-0">
+            <li>Eduarda Silveira Lemos</li>
+            <li>Rael Lima da Silva</li>
+            <li><a href="https://www.linkedin.com/in/vitortheodoro/" target="_blank" class="text-white text-decoration-none">Vitor Theodoro da Fonseca</a></li>
+            <li>Willian de Paula Gonçalves</li>
+          </ul>
+        </div>
+      </div>
+      <hr class="border-light my-4">
+      <div class="d-flex flex-column flex-md-row justify-content-between align-items-center text-center text-md-start">
+        <p class="mb-2 mb-md-0">&copy; 2026 Saúde em Dia. Todos os direitos reservados.</p>
+        <p class="mb-0">Projeto acadêmico do grupo 23 da disciplina de Desenvolvimento Web.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>

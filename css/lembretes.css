@@ -1,0 +1,171 @@
+.navbar-brand {
+    font-size: 1.4rem;
+  }
+  
+  .navbar .nav-link {
+    color: #333;
+    font-weight: 500;
+    transition: 0.3s ease;
+  }
+  
+  .navbar .nav-link:hover {
+    color: #2E8B57;
+  }
+  
+  .navbar .nav-link.active {
+    color: #2E8B57 !important;
+  }
+  
+  .navbar .btn-success {
+    background-color: #2E8B57;
+    border-color: #2E8B57;
+    transition: 0.3s ease;
+  }
+  
+  .navbar .btn-success:hover {
+    background-color: #256f46;
+    border-color: #256f46;
+  }
+
+  .hero-lembretes {
+    background: linear-gradient(135deg, #f0faf4 0%, #e6f7ed 100%);
+  }
+  
+  .hero-lembretes .badge {
+    background-color: #d4edda;
+    color: #2E8B57;
+    font-size: 0.85rem;
+    font-weight: 600;
+  }
+  
+  .hero-lembretes .info-card {
+    border-left: 4px solid #2E8B57;
+  }
+  
+  .hero-lembretes .info-card li {
+    font-size: 0.95rem;
+  }
+  
+  .lembrete-form-card {
+    border: 1px solid #e2f0e8;
+  }
+  
+  .lembrete-form-card .form-control:focus,
+  .lembrete-form-card .form-select:focus {
+    border-color: #2E8B57;
+    box-shadow: 0 0 0 0.2rem rgba(46, 139, 87, 0.15);
+  }
+  
+  .lembrete-form-card .btn-success {
+    background-color: #2E8B57;
+    border-color: #2E8B57;
+    transition: 0.3s ease;
+  }
+  
+  .lembrete-form-card .btn-success:hover {
+    background-color: #256f46;
+    border-color: #256f46;
+  }
+  
+  .btn-filtro {
+    font-size: 0.875rem;
+    transition: 0.2s ease;
+  }
+  
+  .btn-filtro.active,
+  .btn-filtro:hover {
+    background-color: #2E8B57 !important;
+    border-color: #2E8B57 !important;
+    color: #fff !important;
+  }
+  
+  .lembrete-card {
+    border: 1px solid #e2f0e8;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .lembrete-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(46, 139, 87, 0.12) !important;
+  }
+  
+  .lembrete-card.concluido {
+    opacity: 0.6;
+  }
+  
+  .lembrete-card.concluido .lembrete-titulo {
+    text-decoration: line-through;
+    color: #6c757d;
+  }
+  
+  .lembrete-categoria-badge {
+    font-size: 0.78rem;
+    font-weight: 600;
+    background-color: #d4edda;
+    color: #2E8B57;
+    border-radius: 50px;
+    padding: 3px 10px;
+    display: inline-block;
+  }
+  
+  .lembrete-horario {
+    font-size: 0.85rem;
+    color: #6c757d;
+  }
+  
+  .lembrete-titulo {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #212529;
+  }
+  
+  .lembrete-descricao {
+    font-size: 0.875rem;
+    color: #6c757d;
+  }
+  
+  .btn-concluir {
+    font-size: 0.8rem;
+    border-color: #2E8B57;
+    color: #2E8B57;
+    transition: 0.2s ease;
+  }
+  
+  .btn-concluir:hover,
+  .btn-concluir.ativo {
+    background-color: #2E8B57;
+    color: #fff;
+  }
+  
+  .btn-remover {
+    font-size: 0.8rem;
+    border-color: #dc3545;
+    color: #dc3545;
+    transition: 0.2s ease;
+  }
+  
+  .btn-remover:hover {
+    background-color: #dc3545;
+    color: #fff;
+  }
+  
+  .empty-icon {
+    font-size: 3.5rem;
+  }
+  
+  footer {
+    background-color: #1F2937;
+    color: #F5F7FA;
+  }
+  
+  footer a {
+    transition: 0.3s ease;
+  }
+  
+  footer a:hover {
+    color: #7CFC98 !important;
+  }
+  
+  footer ul li {
+    margin-bottom: 0.4rem;
+  }
